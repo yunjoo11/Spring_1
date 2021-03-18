@@ -20,13 +20,8 @@ public class MemberController {
 	
 	//memberJoin2 //  /member/memerJoin POST
 	@RequestMapping(value="/member/memberJoin", method = RequestMethod.POST )
-	public void memberJoin2(String id, String name, String email, String phone, String pw) throws Exception{
-		MemberDTO memberDTO = new MemberDTO();
-		memberDTO.setId(id);
-		memberDTO.setPw(pw);
-		memberDTO.setName(name);
-		memberDTO.setPhone(phone);
-		memberDTO.setEmail(email);
+	public void memberJoin2(MemberDTO memberDTO ) throws Exception{
+		
 		int result = memberService.memberJoin(memberDTO);
 	
 		System.out.println(result);
@@ -48,7 +43,7 @@ public class MemberController {
 		MemberDTO memberDTO = new MemberDTO();
 		memberDTO.setId(id);
 		memberDTO.setPw(pw);
-		memberService.memberLogin(memberDTO);
+		memberDTO = memberService.memberLogin(memberDTO);
 		
 	
 		System.out.println(memberDTO);
