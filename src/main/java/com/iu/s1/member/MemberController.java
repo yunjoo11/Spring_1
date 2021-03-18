@@ -27,7 +27,7 @@ public class MemberController {
 		memberDTO.setName(name);
 		memberDTO.setPhone(phone);
 		memberDTO.setEmail(email);
-		int result = memberService.memberJoin(null);
+		int result = memberService.memberJoin(memberDTO);
 	
 		System.out.println(result);
 	}
