@@ -16,7 +16,7 @@ public class BankBookDAO {
 		//1. 로그인 정보 
 		String user="user01";
 		String password="user01";
-		String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+		String url = "jdbc:oracle:thin:@127.0.0.1:1536:xe";
 		String driver = "oracle.jdbc.driver.OracleDriver";
 
 		//2. 클래스 로딩
@@ -47,7 +47,7 @@ public class BankBookDAO {
 		//1. 로그인 정보 
 		String user="user01";
 		String password="user01";
-		String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+		String url = "jdbc:oracle:thin:@127.0.0.1:1536:xe";
 		String driver = "oracle.jdbc.driver.OracleDriver";
 
 		//2. 클래스 로딩
@@ -95,7 +95,7 @@ public class BankBookDAO {
 		//1. 로그인 정보 
 		String user="user01";
 		String password="user01";
-		String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
+		String url = "jdbc:oracle:thin:@127.0.0.1:1536:xe";
 		String driver = "oracle.jdbc.driver.OracleDriver";
 
 		//2. 클래스 로딩
